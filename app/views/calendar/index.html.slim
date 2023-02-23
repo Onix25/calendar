@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title Dynamic calendar
+    link rel="stylesheets" href="app\assets\stylesheets\calendar.css"
+    = javascript_include_tag 'calendar' , defer: true
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <!-- Google Font Link for Icons -->
+    link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  body
+    .wrapper
+        header
+            p.current-date
+            div.icons
+                span#prev.material-symbols-rounded chevron_left
+                span#next.material-symbols-rounded chevron_right
+        div.calendar
+            ul.weeks
+                li Sun
+                li Mon
+                li Tue
+                li Wed
+                li Thu
+                li Fri
+                li Sat
+            ul.days
+
